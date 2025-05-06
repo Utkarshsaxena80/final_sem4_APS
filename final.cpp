@@ -1181,9 +1181,9 @@ int main() {
     cout << setw(70) << "===============================================\n";
     cout << setw(70) << "          Your Journey, Our Responsibility      \n";
     cout << setw(70) << "-----------------------------------------------\n";
-    cout << setw(70) << "         Flights    Hotels    Buses    Trains      \n";
+    cout << setw(70) << "         Flights    Hotels    Buses    Trains  \n";
     cout << setw(70) << "-----------------------------------------------\n";
-    cout << setw(70) << "   Explore. Book. Travel — All in one place!   \n";
+    cout << setw(70) << "   Explore. Book. Travel - All in one place!   \n";
     cout << setw(70) << "===============================================\n";
 
     cout << "\n\nReady to begin your adventure? Let's go!\n\n";
@@ -1191,7 +1191,7 @@ int main() {
     cout<<"WELCOME TO TARVELLING MANAGEMENT SYSTEM "<<endl;
     int choiceMain;
     while(true){
-        cout << "\n 1.Hotel Booking\n2. Train Booking\n3. Bus Booking \n4. Flight Booking \nChoose: ";
+        cout << "\n1. Hotel Booking\n2. Train Booking\n3. Bus Booking \n4. Flight Booking \n5. Exit \nChoose: ";
         cin>>choiceMain;
         if(choiceMain==1){
          hotelMaster();
@@ -1205,11 +1205,15 @@ int main() {
         if(choiceMain==4){
          flightMaster();
         }
+        if(choiceMain==5){
+            break;
+        }
         else {
             cout<<"Enter the correct NUMBER ..";
         }
     }
-
+    
+    cout<<"Thank you for visiting ..."<<endl;
     return 0;
 }
  
